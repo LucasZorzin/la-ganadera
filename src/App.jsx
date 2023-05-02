@@ -20,7 +20,7 @@ function App () {
       <BrowserRouter>
         <Header />
         <a className='wpp-btn' href='https://api.whatsapp.com/send?phone=5491151377666' target='_blank' rel='noreferrer'>
-          <img src={wpp} alt='WhatsApp Logo' />
+          <img width={63} height={63.38} src={wpp} alt='WhatsApp Logo' />
         </a>
 
         <Routes>

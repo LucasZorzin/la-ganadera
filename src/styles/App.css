@@ -238,11 +238,13 @@ tr:hover {
 
 .wpp-btn img {
   width: 63px;
+  height: 100%;
 }
 
 @media (max-width: 991px) {
   .wpp-btn img {
     width: 55px;
+    height: 100%;
   }
 }
 
@@ -281,6 +283,7 @@ nav li a {
 
 nav li a img {
   width: 95px;
+  height: 100%;
 }
 
 nav li a:hover {

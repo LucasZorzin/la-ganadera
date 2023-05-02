@@ -61,11 +61,12 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-        </header> :
+        </header>
+        :
         <header onMouseLeave={() => closeMenu()} className='mobile'>
           <nav className={navbar ? 'active' : ' '}>
             <div className='d-flex justify-content-center align-items-center'>
-              <a className='mt-1' href='/#'><img width={80} src={logo} alt='La Ganadera - Logo' /></a>
+              <a className='mt-1' href='/#'><img width={80} height={80} src={logo} alt='La Ganadera - Logo' /></a>
               <>
                 <div
                   onClick={() => {
