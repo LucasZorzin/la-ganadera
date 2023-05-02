@@ -47,7 +47,7 @@ const Sucursal = () => {
           </span>
 
           <div className='sucursal__map'>
-            <iframe title='Sucursal' src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d410.46285519313875!2d-58.39499300000001!3d-34.611675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae7f902642f%3A0x5c35525612362a48!2sLa%20Ganadera%20Nueva%20Escocia!5e0!3m2!1ses-419!2sus!4v1682495326196!5m2!1ses-419!2sus' width='100%' height='450' style={{ border: 0 }} allowFullScreen loading='lazy' referrerPolicy='no-referrer-when-downgrade' />
+            {/* <iframe title='Sucursal' src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d410.46285519313875!2d-58.39499300000001!3d-34.611675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae7f902642f%3A0x5c35525612362a48!2sLa%20Ganadera%20Nueva%20Escocia!5e0!3m2!1ses-419!2sus!4v1682495326196!5m2!1ses-419!2sus' width='100%' height='450' style={{ border: 0 }} allowFullScreen loading='lazy' referrerPolicy='no-referrer-when-downgrade' /> */}
           </div>
 
           <div className='px-3 mx-lg-5 px-lg-5'>

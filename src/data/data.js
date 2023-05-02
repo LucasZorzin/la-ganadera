@@ -64,6 +64,7 @@ export const sucursal = [
   '/img/sucursal/6.webp',
   '/img/sucursal/7.webp',
   '/img/sucursal/8.webp',
+  '/img/sucursal/9.webp',
   '/img/sucursal/1.webp',
   '/img/sucursal/2.webp',
   '/img/sucursal/3.webp',

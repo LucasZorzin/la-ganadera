@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <section>
       <div className='vector-lines'>
-        <img src={vector} alt='decoration' />
+        <img width={414} height={24} src={vector} alt='decoration' />
       </div>
 
       <div className='row nosotros'>
@@ -26,7 +26,7 @@ const AboutUs = () => {
 
         </div>
         <div data-aos='fade-left' data-aos-duration='700' data-aos-delay='100' className='col-12 col-lg-6 meat'>
-          <img src={meat} alt='meat' />
+          <img width={378} height={196} src={meat} alt='meat' />
         </div>
       </div>
     </section>
