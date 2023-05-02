@@ -1,6 +1,7 @@
 /* eslint-disable operator-linebreak */
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/img/la-ganadera.webp';
+import logoMobile from '../assets/img/la-ganadera-xs.webp';
 import useHandleResize from '../hooks/useHandleResize';
 
 const Header = () => {
@@ -47,7 +48,7 @@ const Header = () => {
                 <a href='/#productos'>Productos</a>
               </li>
               <li>
-                <a href='/#'><img width={100} src={logo} alt='La Ganadera - Logo' /></a>
+                <a href='/#'><img width={95} height={95} src={logo} alt='La Ganadera - Logo' /></a>
 
               </li>
               <li>
@@ -66,7 +67,7 @@ const Header = () => {
         <header onMouseLeave={() => closeMenu()} className='mobile'>
           <nav className={navbar ? 'active' : ' '}>
             <div className='d-flex justify-content-center align-items-center'>
-              <a className='mt-1' href='/#'><img width={80} height={80} src={logo} alt='La Ganadera - Logo' /></a>
+              <a className='mt-1' href='/#'><img width={80} height={80} src={logoMobile} alt='La Ganadera - Logo' /></a>
               <>
                 <div
                   onClick={() => {

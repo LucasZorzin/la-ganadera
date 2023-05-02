@@ -1,7 +1,11 @@
 import React from 'react';
 import logo from '../assets/img/la-ganadera.webp';
+import logoMobile from '../assets/img/la-ganadera-xs.webp';
+import useHandleResize from '../hooks/useHandleResize';
 
 const Footer = () => {
+  const { width } = useHandleResize();
+
   return (
     <>
       <footer>
@@ -9,7 +13,7 @@ const Footer = () => {
           <div className='row'>
             <div className='col-md-12 col-lg-2 col-xl-2 mx-auto margin-title'>
               <a href='#' className='text-uppercase fw-bold mb-4 footer-img'>
-                <img className='mx-1 pb-5 pb-lg-1 footer-logo' src={logo} width={120} alt='La Ganadera Logo' />
+                <img className='mx-1 pb-5 pb-lg-1 footer-logo' src={width > 991 ? logo : logoMobile} width={120} alt='La Ganadera Logo' />
               </a>
             </div>
 
