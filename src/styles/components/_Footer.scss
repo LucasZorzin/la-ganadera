@@ -1,0 +1,72 @@
+footer {
+    padding: 50px 0 0 0;
+    background-color: var(--background2);
+}
+.footer-copyright {
+    margin-top: 30px;
+    background-color: #0f0700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #ffffff;
+        transition: color 0.5s ease;
+    }
+    a:hover {
+        color: var(--gray);
+    }
+}
+.footer-img {
+    img {
+        filter: saturate(0) brightness(1.9);
+    }
+}
+.footer-subtitles {
+    color: #ffffff;
+}
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li {
+        a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color: #cacaca;
+            transition: color 0.5s ease;
+        }
+        a:hover {
+            color: white;
+        }
+    }
+}
+.copyright {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+//! SMARTPHONES AND TABLETS
+@media (max-width: 991px) {
+    .copyright{
+        justify-content: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,111 @@
+.troceo {
+    position: relative;
+    margin-top: 50px;
+    .troceo-izq {
+        background-color: var(--background1);
+        padding: 150px 78px;
+        display: flex;
+        align-items: center;
+        .troceo-izq__title {
+            h5 {
+                font-family: "Playfair Display";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                letter-spacing: 0.175em;
+                color: rgba(255, 255, 255, 0.8);
+            }
+            margin-bottom: 20px;
+        }
+        h6 {
+            font-family: "Playfair Display";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 36px;
+            color: #ffe3ca;
+            margin-bottom: 20px;
+        }
+        p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 30px;
+            text-align: justify;
+            color: #c6b09c;
+            margin-bottom: 45px;
+        }
+        .troceo-izq__btn-contacto {
+            a {
+                cursor: pointer;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                text-align: center;
+                color: #c6b09c;
+                border: 2px solid #c6b09c;
+                padding: 11px 50px;
+                transition: all 0.3s ease;
+            }
+
+            a:hover {
+                background-color: #c6b09c;
+                color: var(--background1);
+            }
+        }
+    }
+    .troceo-carousel {
+        .troceo-carousel__img {
+            img {
+                width: 100%;
+                height: 700px;
+                object-fit: cover;
+                object-position: center;
+                cursor: zoom-in;
+            }
+        }
+    }
+}
+.mySwiper--troceo .swiper-pagination-bullet {
+    background: white !important;
+    width: 13px !important;
+    height: 13px !important;
+    margin: 0 9px !important;
+}
+
+@media (max-width: 1245px) {
+    .troceo .troceo-carousel .troceo-carousel__img img{
+        height: 820px;
+    }
+} 
+
+//! SMARTPHONES AND TABLETS
+@media (max-width: 991px) {
+    .troceo .troceo-izq{
+        padding: 80px 47px 50px 47px; 
+    }
+    .troceo .troceo-izq h6{
+        font-size: 20px;
+    }
+    .troceo-izq__btn-contacto {
+        a {
+            font-size: 15px !important;
+        }
+    }
+    .troceo{
+        .troceo-carousel {
+            .troceo-carousel__img {
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    object-position: center;
+                    cursor: zoom-in;
+                }
+            }
+        }
+    }
+}

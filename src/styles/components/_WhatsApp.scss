@@ -1,0 +1,17 @@
+.wpp-btn{
+    position: fixed;
+    z-index: 5;
+    bottom: 11px;
+    right: 11px;
+    img{
+        width: 63px;
+    }
+}
+//! SMARTPHONES AND TABLETS
+@media (max-width: 991px) {
+    .wpp-btn{
+        img{
+            width: 55px; 
+        }
+    }
+}

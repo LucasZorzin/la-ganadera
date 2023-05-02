@@ -1,0 +1,71 @@
+.vector-lines {
+    width: 100vw;
+    pointer-events: none;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.nosotros {
+    margin-top: 100px;
+    padding: 0 50px;
+    .nosotros__title {
+        position: relative;
+        h5 {
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 0.175em;
+            color: var(--primary--op69);
+            font-family: "Playfair Display", serif;
+        }
+        margin-bottom: 20px;
+    }
+    h6 {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        color: var(--titles);
+        margin-bottom: 20px;
+    }
+    p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 25px;
+        padding-right: 70px;
+        color: var(--gray);
+    }
+    .meat {
+        img {
+            width: 110%;
+            max-height: 400px;
+            object-fit: contain;
+        }
+    }
+}
+
+//! SMARTPHONES AND TABLETS
+@media (max-width: 991px) {
+    .vector-lines img{
+        height: 20px;
+    }
+    .nosotros{
+        margin-top: 50px;
+        padding: 0 35px;
+        // text-align: center;
+        h6{
+            font-size: 20px;
+        }
+        p{
+            padding: 0;
+            text-align: justify;
+        }
+    }
+    .meat{
+        margin-top: 20px;
+    }
+}

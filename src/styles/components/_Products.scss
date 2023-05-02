@@ -1,0 +1,189 @@
+.products {
+    margin-top: 5%;
+    .products__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        h5 {
+            font-family: "Playfair Display";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 29px;
+            text-align: center;
+            color: var(--titles);
+            position: relative;
+            z-index: 2;
+            padding: 0 40px;
+            background-color: white;
+        }
+        .aclaracion {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 15px;
+            text-align: center;
+            color: var(--primary);
+        }
+    }
+    .products__title::before,
+    .products__title::after {
+        position: absolute;
+        top: 8px;
+        height: 100%;
+        width: 50vw;
+        content: "";
+        overflow: hidden;
+    }
+
+    .products__title::before {
+        left: 0;
+        content: url("/img/vector-lineas.svg");
+    }
+
+    .products__title::after {
+        right: 0;
+        content: url("/img/vector-lineas.svg");
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 55px 20px 0 20px;
+        div {
+            cursor: pointer;
+            margin: 10px;
+            min-width: 100px;
+            padding: 0 20px;
+            min-height: 40px;
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+            span {
+                font-family: "Playfair Display";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 17px;
+                text-align: center;
+                color: var(--primary);
+            }
+        }
+        div:hover {
+            background-color: rgba(159, 103, 50, 0.104);
+        }
+    }
+    .selectedCategory {
+        background-color: rgba(159, 102, 50, 0.24) !important;
+    }
+}
+
+// CAROUSEL
+.swiper-pagination-bullet {
+    background: var(--titles) !important;
+    width: 13px !important;
+    height: 13px !important;
+    margin: 0 9px !important;
+}
+.product-carousel {
+    margin: 20px auto 80px auto;
+    width: 70%;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.14);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .product-carousel__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 85%;
+        height: 250px;
+        margin: 20px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            cursor: zoom-in;
+        }
+    }
+    span {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: var(--titles);
+        margin-bottom: 20px;
+    }
+}
+.mySwiper--products {
+    margin-top: 2%;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    color: var(--titles);
+    font-size: 27px !important;
+}
+.swiper-button-prev {
+    margin-left: 0.5%;
+}
+.swiper-button-next {
+    margin-right: 0.5%;
+}
+
+//! SMARTPHONES AND TABLETS
+@media (max-width: 991px) {
+    .products .products__title {
+        margin-top: 70px;
+        h5 {
+            font-size: 20px;
+            padding: 0 10px;
+            padding-top: 5px;
+        }
+        .aclaracion {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+    .products .categories {
+        margin: 20px 0 0 0;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+        div{
+            margin: 5px;
+            span{
+                font-size: 15px;
+            }
+        }
+    }
+    .categories::-webkit-scrollbar {
+        width: 8px;
+        background-color: transparent;
+    }
+
+    .categories::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .categories::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 20px;
+        border: 3px solid transparent;
+    }
+}
