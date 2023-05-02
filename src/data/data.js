@@ -54,20 +54,20 @@ export const products = {
 };
 
 export const troceo = [
-  '1.webp',
+  '1-xs.webp',
   '2.webp',
   '3.webp',
   '4.webp'
 ];
 
 export const sucursal = [
-  '/img/sucursal/6.webp',
-  '/img/sucursal/7.webp',
-  '/img/sucursal/8.webp',
-  '/img/sucursal/9.webp',
-  '/img/sucursal/1.webp',
-  '/img/sucursal/2.webp',
-  '/img/sucursal/3.webp',
-  '/img/sucursal/4.webp',
-  '/img/sucursal/5.webp'
+  '/img/sucursal/6',
+  '/img/sucursal/7',
+  '/img/sucursal/8',
+  '/img/sucursal/9',
+  '/img/sucursal/1',
+  '/img/sucursal/2',
+  '/img/sucursal/3',
+  '/img/sucursal/4',
+  '/img/sucursal/5'
 ];
