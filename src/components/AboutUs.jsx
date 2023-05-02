@@ -20,7 +20,7 @@ const AboutUs = () => {
             <p>
               Nuestro compromiso con la excelencia se refleja en cada aspecto de nuestra empresa. Nos enfocamos en seleccionar cuidadosamente las carnes que ofrecemos para garantizar que sean frescas y de gran calidad.
               <br />
-              Ofrecemos una amplia variedad de cortes de carne de res, cerdo y pollo. Nos enorgullece brindar un servicio amable y personalizado a cada cliente y nos esforzamos por superar sus expectativas.
+              Ofrecemos la mejor relación precio-calidad en cortes de carne de res, cerdo, pollo y una amplia variedad en fiambres y embutidos. Nos enorgullece brindar un servicio amable y personalizado a cada cliente y nos esforzamos por superar sus expectativas.
             </p>
           </div>
 
