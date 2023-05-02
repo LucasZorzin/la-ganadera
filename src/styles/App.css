@@ -1425,6 +1425,8 @@ footer {
 .footer-img img {
   -webkit-filter: saturate(0) brightness(1.9);
           filter: saturate(0) brightness(1.9);
+  width: 120px;
+  height: 120px;
 }
 
 .footer-subtitles {
@@ -1484,6 +1486,10 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+  }
+  .footer-img img {
+    width: 120px;
+    height: 100%;
   }
 }
 
