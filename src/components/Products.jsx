@@ -14,6 +14,9 @@ const Products = () => {
 
   const productsRef = useRef(null);
   useEffect(() => {
+    const swiper = productsRef.current.swiper;
+    swiper.autoplay.stop();
+
     function handleScroll () {
       const swiper = productsRef.current.swiper;
       const elementPosition = productsRef.current.getBoundingClientRect().top;

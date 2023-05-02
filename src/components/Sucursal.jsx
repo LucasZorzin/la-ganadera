@@ -15,6 +15,9 @@ const Sucursal = () => {
 
   const sucursalRef = useRef(null);
   useEffect(() => {
+    const swiper = sucursalRef.current.swiper;
+    swiper.autoplay.stop();
+
     function handleScroll () {
       const swiper = sucursalRef.current.swiper;
       const elementPosition = sucursalRef.current.getBoundingClientRect().top;

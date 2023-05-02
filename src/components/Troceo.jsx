@@ -13,6 +13,9 @@ const Troceo = () => {
 
   const troceoRef = useRef(null);
   useEffect(() => {
+    const swiper = troceoRef.current.swiper;
+    swiper.autoplay.stop();
+
     function handleScroll () {
       const swiper = troceoRef.current.swiper;
       const elementPosition = troceoRef.current.getBoundingClientRect().top;
