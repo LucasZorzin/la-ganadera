@@ -61,11 +61,11 @@ export const troceo = [
 ];
 
 export const sucursal = [
+  '/img/sucursal/1',
   '/img/sucursal/6',
   '/img/sucursal/7',
   '/img/sucursal/8',
   '/img/sucursal/9',
-  '/img/sucursal/1',
   '/img/sucursal/2',
   '/img/sucursal/3',
   '/img/sucursal/4',
