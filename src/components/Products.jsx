@@ -31,6 +31,7 @@ const Products = () => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  const [productsSwiper, setProductsSwiper] = useState({});
 
   return (
     <>
@@ -43,7 +44,7 @@ const Products = () => {
 
         <div className='categories'>
           {Object.keys(products)?.map((category) => (
-            <div className={category === selectedCategory ? 'selectedCategory' : ' '} onClick={() => setSelectedCategory(category)} key={category}>
+            <div className={category === selectedCategory ? 'selectedCategory' : ' '} onClick={() => { setSelectedCategory(category); productsSwiper.slideTo(0); }} key={category}>
               <span>{category}</span>
             </div>
           ))}
@@ -52,6 +53,9 @@ const Products = () => {
         <div>
           <Swiper
             ref={productsRef}
+            onInit={(e) => {
+              setProductsSwiper(e);
+            }}
             spaceBetween={10}
             navigation
             autoplay={{ disableOnInteraction: false }} // al inicio

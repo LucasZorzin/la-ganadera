@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/img/la-ganadera.webp';
 import logoMobile from '../assets/img/la-ganadera-xs.webp';
 import useHandleResize from '../hooks/useHandleResize';
+const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   const { width } = useHandleResize();
@@ -101,7 +102,7 @@ const Footer = () => {
             </div>
           </div>
           <span className='copyright'>
-            Copyright © 2023 <br />
+            Copyright © {currentYear} <br />
             LA GANADERA - NOVA FRIGORÍFICO SRL
           </span>
         </div>
