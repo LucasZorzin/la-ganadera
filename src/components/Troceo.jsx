@@ -46,8 +46,8 @@ const Troceo = () => {
                 Abastece a tus clientes de manera eficiente con nuestro servicio de troceo
               </h6>
               <p>
-                Nuestro objetivo es asegurar que tus clientes siempre estén satisfechos, por eso ofrecemos nuestro servicio de troceo en piezas. Con esta opción, puedes adquirir pieza por pieza con el fin de abastecer de manera eficiente y satisfacer las necesidades de tus propios clientes.
-                Contáctanos para obtener más información sobre nuestro servicio de troceo en piezas.
+                Nuestro objetivo es que nuestros clientes estén satisfechos, por eso ofrecemos servicio de troceo y venta mayorista. Atendemos a carnicerías, supermercados, restaurantes, parrillas y distribuidores. Con este servicio podrá abastecer de manera eficiente y satisfactoria las necesidades de sus propios clientes.
+                Contactanos para obtener más información sobre nuestro servicio.
               </p>
               <div className='troceo-izq__btn-contacto'>
                 <a href='#contacto'>CONTACTANOS</a>
