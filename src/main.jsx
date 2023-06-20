@@ -1,11 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import App from './App';
 import { Analytics } from '@vercel/analytics/react';
+import { hydrate, render } from 'react-dom';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-    <Analytics />
-  </React.StrictMode>
-);
+const rootElement = document.getElementById('root');
+if (rootElement.hasChildNodes()) {
+  hydrate(
+    <>
+      <App />
+      <Analytics />
+    </>, rootElement);
+} else {
+  render(
+    <>
+      <App />
+      <Analytics />
+    </>, rootElement);
+}
